@@ -1,0 +1,129 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://kit.fontawesome.com/8aa17a250d.js" crossorigin="anonymous"></script>
+<style>
+	@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+	* { padding: 0; margin: 0; overflow-x: hidden; }
+	body { font-family: "Poppins", serif; }
+	.header img { width: 70px; border-radius: 125px; margin: 10px 10px 0px 10px; }
+	.baap-header img { width: 60px; border-radius: 125px; margin: 10px 10px 0px 10px; }
+	.customer-text { display: flex; align-items: center; gap: 10px; margin: 10px; }
+    .header > .customer-text h3 { margin: 0px; font-size: 22px; font-weight: 400; }
+    .customer-text hr { flex-grow: 1; border: none; border-top: 2px solid #fff; }
+    .about > .customer-text hr { flex-grow: 1; border: none; border-top: 1px solid #000; }
+    .baap-header { background: linear-gradient(90deg, #003577, #2084ff); color: #FFFF; height: 10vh; position: fixed; top: 0; left: 0; width: 100%; }
+	.header { background: linear-gradient(90deg, #003577, #2084ff); color: #FFFF; height: 45vh; }
+	.header > p { margin: 10px 10px 40px 10px; }
+	.header > a { margin: 10px; padding: 10px; text-decoration: none; font-size: 15px; color: #fff; border: 1px solid; border-radius: 20px; }
+	.info { background: linear-gradient(90deg, #003577, #2084ff); color: #FFFF; height: auto; }
+	.customer-text h3 { font-size: 20px; font-weight: 400; }
+	.info > p,.about > p { margin: 10px; text-align: center; font-size: 15px; }
+	.btn { width: 50px; height: 50px; background: #000; border: none; border-radius: 50%; }
+	.phone { display: flex; align-items: center; width: 100%;  justify-content: center;}
+	.shot , .screen { gap: 20px; flex-direction: column; display: flex; align-items: center; justify-content: center; }
+	#image { width: 100%; height: 65vh; border-radius: 12px; }
+	.screen { padding: 20px; margin: 10px 10px 50px 10px; background: #d5d5d5; border-radius: 25px; width: 250px; }
+	li { margin: 5px 0px 0px 10px; font-size: 18px; }
+	.line { width: 100px; height: 5px; border-radius: 25px; background: #000; }
+	.info a { color: #fff; text-decoration: none; display: flex; gap: 20px;align-items: center; justify-content: center; flex-direction: row; border: 1px solid; padding: 10px; border-radius: 25px; width: 80%;margin: 0px 0px 40px 10px; }
+	.info > a > div > p{ font-size: 22px; }
+	.info > a > i{ font-size: 45px; overflow: hidden; }
+	.back-to-top { position: fixed; bottom: 20px; right: 20px; width: 50px; height: 50px; background-color: #007BFF; color: white; text-align: center; line-height: 50px; border-radius: 50%; font-size: 24px; cursor: pointer; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); transition: opacity 0.3s ease, transform 0.3s ease; opacity: 0; visibility: hidden; z-index: 1000; }
+	.back-to-top.show { opacity: 1; visibility: visible; }
+	.back-to-top:hover { background-color: #0056b3; transform: scale(1.1); }
+</style>
+<div class="baap-header">
+	<img src="https://i.ibb.co/xF2DX1z/icon.jpg" onclick="reload()">
+</div>
+<div class="header">
+	<img src="https://i.ibb.co/xF2DX1z/icon.jpg" onclick="reload()">
+	<div class="customer-text"><hr><h3>Khiladi Esports</h3><hr></div>
+	<p>Join the khiladi esports battle revolution and become part of the premier esports community download today to begin your journey of competitive excellence.</p>
+	<a href="com.khiladiesports.apk" download>Download App</a>
+</div>
+<div class="about">
+	<div class="customer-text"><hr><h3>About Khiladi Esports</h3><hr></div>
+	<p>Introducing khiladi esports - android's ultimate esports app! Complete, connect, and earn real cash prizes.</p>
+	<div class="customer-text"><h3>Advance Protection</h3><hr></div>
+	<p>We Secure Your Data By Encrypting Senstive Details, Like Passwords And Payment Information, During Transmission.</p>
+	<div class="customer-text"><hr><h3>Seamless Performance</h3></div>
+	<p>Khiladi esports is built with cutting-edge technology to deliver seamless and reilabe performance.</p>
+	<div class="customer-text"><h3>Earn Real Cash Prizes</h3><hr></div>
+	<p style="margin: 10px 10px 40px 10px;">No points, tokens, or scores-just real cash prizes. With Khiladi Esports, demonstrate your skills and earn money effortlessly.</p>
+</div>
+<div class="info">
+	<div class="customer-text" style="margin: 40px 10px 10px 10px;"><hr><h3>Quick Payouts</h3><hr></div>
+	<p>Receive winnings in your wallet and withdraw easily via UPI.</p>
+	<div class="customer-text"><h3>Social Login</h3><hr></div>
+	<p>Sign up or logi in easily with your social media accounts. Stay connected!.</p>
+	<div class="customer-text"><hr><h3>Winning Prizes</h3></div>
+	<p>Easily withdraw your winnings directly to your bank account via UPI.</p>
+	<div class="customer-text"><h3>Notifications</h3><hr></div>
+	<p style="margin: 10px 10px 40px 10px;">Get real-time updates with instant activity notifications.</p>
+</div>
+<div class="about">
+	<div class="customer-text" style="margin: 40px 10px 10px 10px;"><hr><h3>Retina Ready</h3><hr></div>
+	<p>Stunning visuals with trendy designs and vibrant colours that captivate.</p>
+	<div class="customer-text"><h3>High Resolution</h3><hr></div>
+	<p>Experience pixel-perfect clarity for a flowless and immersive display.</p>
+	<div class="customer-text"><hr><h3>Clean Code</h3></div>
+	<p>Code smarter with modern technologies and frameworks.</p>
+	<div class="customer-text"><h3>Helping Supports</h3><hr></div>
+	<p style="margin: 10px 10px 40px 10px;">Help is just a Message Away - Reach Out to Us Now!</p>
+</div>
+<div class="info">
+	<div class="customer-text" style="margin: 40px 10px 10px 10px;"><hr><h3>App Screenshot</h3><hr></div>
+	<div class="phone">
+	<div class="screen">
+	<div class="line"></div>
+	<div class="shot">
+	<img id="image" src="https://i.ibb.co/r7JsV8K/img1.jpg" alt="Image 1">
+</div>
+    <button onclick="showNextImage()" class="btn"></button>
+</div>
+</div>
+</div>
+<div class="about">
+	<div class="customer-text" style="margin: 40px 10px 10px 10px;"><hr><h3>Testimonials</h3><hr></div>
+	<li>Paytm</li> <li>Pay U</li>
+</div>
+<div class="info" style="margin: 40px 0px 0px 0px;">
+	<div class="customer-text" style="margin: 40px 10px 10px 10px;"><hr><h3>Download Available</h3><hr></div>
+	<p style="margin: 10px 10px 40px 10px;">How play and earn by downloading latest version of khiladi esports.</p>
+	<a href="com.khiladiesports.apk" download>
+		<i class="fa-brands fa-android"></i>
+		<div>
+		<span>Available App</span>
+		<p>Download Here</p>
+	</div>
+	</a>
+</div>
+<div id="backToTop" class="back-to-top">
+	↑
+</div>
+<script>
+	function reload(){
+		location.reload();
+	}
+	const images = ["https://i.ibb.co/r7JsV8K/img1.jpg", "https://i.ibb.co/F6PCxtB/img2.jpg", "https://i.ibb.co/Gkg3w5c/img3.jpg", "https://i.ibb.co/C6Fh0p1/img4.jpg"];
+	let currentIndex = 0;
+	function showNextImage() {
+		currentIndex = (currentIndex + 1) % images.length;
+		document.getElementById("image").src = images[currentIndex];
+		document.getElementById("image").alt = `Image ${currentIndex + 1}`;
+	}
+	const backToTopButton = document.getElementById("backToTop");
+	window.addEventListener("scroll", () => {
+	  if (window.scrollY > 300) {
+	    backToTopButton.classList.add("show");
+	  } else {
+	    backToTopButton.classList.remove("show");
+	  }
+	});
+	backToTopButton.addEventListener("click", () => {
+	  window.scrollTo({
+	    top: 0,
+	    behavior: "smooth",
+	  });
+	});
+</script>
