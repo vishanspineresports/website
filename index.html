@@ -1,129 +1,87 @@
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<script src="https://kit.fontawesome.com/8aa17a250d.js" crossorigin="anonymous"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
-	@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-	* { padding: 0; margin: 0; overflow-x: hidden; }
-	body { font-family: "Poppins", serif; }
-	.header img { width: 70px; border-radius: 125px; margin: 10px 10px 0px 10px; }
-	.baap-header img { width: 70px; border-radius: 125px; margin: 10px 10px 0px 10px; }
-	.customer-text { display: flex; align-items: center; gap: 10px; margin: 10px; }
-    .header > .customer-text h3 { margin: 0px; font-size: 22px; font-weight: 400; }
-    .customer-text hr { flex-grow: 1; border: none; border-top: 2px solid #fff; }
-    .about > .customer-text hr { flex-grow: 1; border: none; border-top: 1px solid #000; }
-    .baap-header { background: linear-gradient(90deg, #003577, #2084ff); color: #FFFF; height: 14vh; position: fixed; top: 0; left: 0; width: 100%; }
-	.header { background: linear-gradient(90deg, #003577, #2084ff); color: #FFFF; height: 45vh; }
-	.header > p { margin: 10px 10px 40px 10px; }
-	.header > a { margin: 10px; padding: 10px; text-decoration: none; font-size: 15px; color: #fff; border: 1px solid; border-radius: 20px; }
-	.info { background: linear-gradient(90deg, #003577, #2084ff); color: #FFFF; height: auto; }
-	.customer-text h3 { font-size: 20px; font-weight: 400; }
-	.info > p,.about > p { margin: 10px; text-align: center; font-size: 15px; }
-	.btn { width: 50px; height: 50px; background: #000; border: none; border-radius: 50%; }
-	.phone { display: flex; align-items: center; width: 100%;  justify-content: center;}
-	.shot , .screen { gap: 20px; flex-direction: column; display: flex; align-items: center; justify-content: center; }
-	#image { width: 100%; height: 65vh; border-radius: 12px; }
-	.screen { padding: 20px; margin: 10px 10px 50px 10px; background: #d5d5d5; border-radius: 25px; width: 250px; }
-	li { margin: 5px 0px 0px 10px; font-size: 18px; }
-	.line { width: 100px; height: 5px; border-radius: 25px; background: #000; }
-	.info a { color: #fff; text-decoration: none; display: flex; gap: 20px;align-items: center; justify-content: center; flex-direction: row; border: 1px solid; padding: 10px; border-radius: 25px; width: 80%;margin: 0px 0px 40px 10px; }
-	.info > a > div > p{ font-size: 22px; }
-	.info > a > i{ font-size: 45px; overflow: hidden; }
-	.back-to-top { position: fixed; bottom: 20px; right: 20px; width: 50px; height: 50px; background-color: #007BFF; color: white; text-align: center; line-height: 50px; border-radius: 50%; font-size: 24px; cursor: pointer; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); transition: opacity 0.3s ease, transform 0.3s ease; opacity: 0; visibility: hidden; z-index: 1000; }
-	.back-to-top.show { opacity: 1; visibility: visible; }
-	.back-to-top:hover { background-color: #0056b3; transform: scale(1.1); }
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Henny+Penny&display=swap');
+    * { overflow-x: hidden; }
+    h1, h2, h3, h4, h5, h6, p { margin: 0; }
+    body { padding: 0; margin: 0; background: linear-gradient(360deg, #091b33, #00a9a9, #172459); color: #fff; font-family: 'Poppins', sans-serif; }
+    .header { display: flex; align-items: center; padding: 10px; background: #04365f; color: #fff; box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px; }
+    .header h2 { margin: 0px 0px 0px 10px; font-family: "Henny Penny", serif; color: e7e7e7; }
+    .header img { border-radius: 125px; width: 40px; }
+    .customer-text { display: flex; align-items: center; gap: 10px; margin: 10px; }
+    .customer-text hr { flex-grow: 1; border: none; border-top: 1px solid #FFF; }
+    p { margin: 10px; font-size: 16px; font-weight: 500; }
+    .container { border-radius: 8px; padding: 20px; text-align: center; }
+    .box { background: #1e293b; box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); border-radius: 12px; }
+    h1 { font-size: 24px; color: #38bdf8; margin-bottom: 20px; }
+    .qr-code { margin: 20px 0; padding: 10px; background: #0f172a; border: 2px solid #38bdf8; border-radius: 8px; display: inline-block; }
+    input[type="file"] { margin: 20px 0; padding: 10px; border-radius: 4px; }
+    input[type="file"]::file-selector-button { border: 2px solid #6c5ce7; padding: 0.2em 0.4em; border-radius: 0.2em; background-color: #a29bfe; transition: 1s; }
+    button { background: linear-gradient(45deg, #091b33, #00a9a9, #172459); border-radius: 25px; border: none; color: #fff; width: 80%; padding: 8px; font-weight: 600; font-family: 'Poppins', sans-serif; }
 </style>
-<div class="baap-header">
-	<img src="https://i.ibb.co/xF2DX1z/icon.jpg" onclick="reload()">
-</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
 <div class="header">
-	<img src="https://i.ibb.co/xF2DX1z/icon.jpg" onclick="reload()">
-	<div class="customer-text"><hr><h3>Khiladi Esports</h3><hr></div>
-	<p>Join the khiladi esports battle revolution and become part of the premier esports community download today to begin your journey of competitive excellence.</p>
-	<a href="com.khiladiesports.apk" download>Download App</a>
+    <img src="https://i.ibb.co/c8pX0LG/icon.png">
+    <h2>Next Move</h2>
 </div>
-<div class="about">
-	<div class="customer-text"><hr><h3>About Khiladi Esports</h3><hr></div>
-	<p>Introducing khiladi esports - android's ultimate esports app! Complete, connect, and earn real cash prizes.</p>
-	<div class="customer-text"><h3>Advance Protection</h3><hr></div>
-	<p>We Secure Your Data By Encrypting Senstive Details, Like Passwords And Payment Information, During Transmission.</p>
-	<div class="customer-text"><hr><h3>Seamless Performance</h3></div>
-	<p>Khiladi esports is built with cutting-edge technology to deliver seamless and reilabe performance.</p>
-	<div class="customer-text"><h3>Earn Real Cash Prizes</h3><hr></div>
-	<p style="margin: 10px 10px 40px 10px;">No points, tokens, or scores-just real cash prizes. With Khiladi Esports, demonstrate your skills and earn money effortlessly.</p>
+<div class="customer-text">
+    <h3>App Suspended</h3>
+    <hr>
 </div>
-<div class="info">
-	<div class="customer-text" style="margin: 40px 10px 10px 10px;"><hr><h3>Quick Payouts</h3><hr></div>
-	<p>Receive winnings in your wallet and withdraw easily via UPI.</p>
-	<div class="customer-text"><h3>Social Login</h3><hr></div>
-	<p>Sign up or logi in easily with your social media accounts. Stay connected!.</p>
-	<div class="customer-text"><hr><h3>Winning Prizes</h3></div>
-	<p>Easily withdraw your winnings directly to your bank account via UPI.</p>
-	<div class="customer-text"><h3>Notifications</h3><hr></div>
-	<p style="margin: 10px 10px 40px 10px;">Get real-time updates with instant activity notifications.</p>
+<p>Your App Is Suspended Because You Not Paying The Amount . Please Pay And Renew The App</p>
+<div class="container">
+    <div class="box">
+  <div id="qr-code" class="qr-code"></div>
+  <p>Amount: ₹599</p>
+
+  <form action="https://script.google.com/macros/s/AKfycbwlxpRpcSr-1OvhvmAo2-6eokTSdYG3U7G_YdnND2btudeqCGyHbdE9Uf2CCXpD73OTbw/exec" method="POST" enctype="multipart/form-data">
+    <input type="file" name="image" id="image" accept="image/*" required><br>
+    <button type="submit">Submit</button>
+  </form>
 </div>
-<div class="about">
-	<div class="customer-text" style="margin: 40px 10px 10px 10px;"><hr><h3>Retina Ready</h3><hr></div>
-	<p>Stunning visuals with trendy designs and vibrant colours that captivate.</p>
-	<div class="customer-text"><h3>High Resolution</h3><hr></div>
-	<p>Experience pixel-perfect clarity for a flowless and immersive display.</p>
-	<div class="customer-text"><hr><h3>Clean Code</h3></div>
-	<p>Code smarter with modern technologies and frameworks.</p>
-	<div class="customer-text"><h3>Helping Supports</h3><hr></div>
-	<p style="margin: 10px 10px 40px 10px;">Help is just a Message Away - Reach Out to Us Now!</p>
-</div>
-<div class="info">
-	<div class="customer-text" style="margin: 40px 10px 10px 10px;"><hr><h3>App Screenshot</h3><hr></div>
-	<div class="phone">
-	<div class="screen">
-	<div class="line"></div>
-	<div class="shot">
-	<img id="image" src="https://i.ibb.co/r7JsV8K/img1.jpg" alt="Image 1">
-</div>
-    <button onclick="showNextImage()" class="btn"></button>
-</div>
-</div>
-</div>
-<div class="about">
-	<div class="customer-text" style="margin: 40px 10px 10px 10px;"><hr><h3>Testimonials</h3><hr></div>
-	<li>Paytm</li> <li>Pay U</li>
-</div>
-<div class="info" style="margin: 40px 0px 0px 0px;">
-	<div class="customer-text" style="margin: 40px 10px 10px 10px;"><hr><h3>Download Available</h3><hr></div>
-	<p style="margin: 10px 10px 40px 10px;">How play and earn by downloading latest version of khiladi esports.</p>
-	<a href="com.khiladiesports.apk" download>
-		<i class="fa-brands fa-android"></i>
-		<div>
-		<span>Available App</span>
-		<p>Download Here</p>
-	</div>
-	</a>
-</div>
-<div id="backToTop" class="back-to-top">
-	↑
 </div>
 <script>
-	function reload(){
-		location.reload();
-	}
-	const images = ["https://i.ibb.co/r7JsV8K/img1.jpg", "https://i.ibb.co/F6PCxtB/img2.jpg", "https://i.ibb.co/Gkg3w5c/img3.jpg", "https://i.ibb.co/C6Fh0p1/img4.jpg"];
-	let currentIndex = 0;
-	function showNextImage() {
-		currentIndex = (currentIndex + 1) % images.length;
-		document.getElementById("image").src = images[currentIndex];
-		document.getElementById("image").alt = `Image ${currentIndex + 1}`;
-	}
-	const backToTopButton = document.getElementById("backToTop");
-	window.addEventListener("scroll", () => {
-	  if (window.scrollY > 300) {
-	    backToTopButton.classList.add("show");
-	  } else {
-	    backToTopButton.classList.remove("show");
-	  }
-	});
-	backToTopButton.addEventListener("click", () => {
-	  window.scrollTo({
-	    top: 0,
-	    behavior: "smooth",
-	  });
-	});
+  const qrCode = new QRCode(document.getElementById("qr-code"), {
+    text: "upi://pay?pa=createprincemahto-2@okaxis&pn=Next%20Move&am=149",
+    width: 150,
+    height: 150,
+    colorDark: "#38bdf8",
+    colorLight: "#0f172a",
+  });
+
+  document.querySelector('form').addEventListener('submit', async function(e) {
+    e.preventDefault();
+    const formData = new FormData(this);
+    const fileInput = document.getElementById('image');
+    if (fileInput.files.length > 0) {
+      const imgbbApiKey = 'a1aab7277069e3d6fa62ab397ae5dfca';
+      try {
+        const response = await fetch(`https://api.imgbb.com/1/upload?key=${imgbbApiKey}`, {
+          method: 'POST',
+          body: formData,
+        });
+        const result = await response.json();
+        if (result.success) {
+          const imageUrl = result.data.url;
+          formData.append('imageUrl', imageUrl);
+          fetch('https://script.google.com/macros/s/AKfycbwlxpRpcSr-1OvhvmAo2-6eokTSdYG3U7G_YdnND2btudeqCGyHbdE9Uf2CCXpD73OTbw/exec', {
+            method: 'POST',
+            body: formData,
+          }).then(response => {
+            if (response.ok) {
+              alert('Data submitted successfully!');
+            } else {
+              alert('Error submitting data.');
+            }
+          });
+        } else {
+          alert('Failed to upload image.');
+        }
+      } catch (error) {
+        console.error('Error:', error);
+        alert('An error occurred.');
+      }
+    }
+  });
 </script>
